@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/litegreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:background="@color/litegreen"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="25dp"
+        android:elevation="10dp"
+        android:backgroundTint="@color/liteblue">
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:layout_gravity="center"
+        android:background="@color/liteblue"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b1"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/white"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:contentDescription="@string/h"
+            android:onClick="clickMethod"
+            tools:ignore="SpeakableTextPresentCheck"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b2"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/white"
+            android:textSize="40sp"
+            android:contentDescription="@string/h"
+            android:textColor="@color/black"
+            android:onClick="clickMethod"
+            tools:ignore="SpeakableTextPresentCheck"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b3"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/white"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:contentDescription="@string/h"
+            android:onClick="clickMethod"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b4"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/h"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:onClick="clickMethod"
+            tools:ignore="SpeakableTextPresentCheck"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b5"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/h"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:onClick="clickMethod"
+            tools:ignore="SpeakableTextPresentCheck"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b6"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/white"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:onClick="clickMethod"
+            android:contentDescription="@string/h"
+            tools:ignore="SpeakableTextPresentCheck"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b7"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:onClick="clickMethod"
+            android:contentDescription="@string/h"
+            tools:ignore="SpeakableTextPresentCheck"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b8"
+            android:layout_marginLeft="8dp"
+            android:backgroundTint="@color/white"
+            android:textSize="40sp"
+            android:textColor="@color/black"
+            android:onClick="clickMethod"
+            android:contentDescription="@string/h"
+            tools:ignore="SpeakableTextPresentCheck"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b9"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:onClick="clickMethod"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </GridLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="First player is by default 'X'"/>
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        android:text="Term : Player 'X'"/>
+    </LinearLayout>
+</ScrollView>
